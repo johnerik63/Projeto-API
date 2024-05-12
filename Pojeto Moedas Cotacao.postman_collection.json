@@ -1,0 +1,811 @@
+{
+	"info": {
+		"_postman_id": "c90610da-2010-4f6a-a42a-1d45cdee8ccf",
+		"name": "Pojeto Moedas Cotacao",
+		"description": "Abaixo se encontra a documentação do meu projeto.",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "34222152"
+	},
+	"item": [
+		{
+			"name": "Minha API",
+			"item": [
+				{
+					"name": "EUR",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "https://44snf6e6di.execute-api.us-east-1.amazonaws.com/EUR",
+						"description": "## Retorna o valor do Euro\n\nNessa aba, está demonstrado como usar o código para conseguir as informações do Euro.\n\nO /EUR deve ser adicionado para retornar os valores desejados.\n\nObs: A sigla deve ser em maiúsculo para uso correto."
+					},
+					"response": [
+						{
+							"name": "EURO",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": "https://44snf6e6di.execute-api.us-east-1.amazonaws.com/EUR"
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Mon, 29 Apr 2024 18:07:21 GMT"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "239"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "server",
+									"value": "Google Frontend"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "etag",
+									"value": "W/\"ef-FMorQq6jWkpF2LeVj0xc0Zu+R8g\""
+								},
+								{
+									"key": "Function-Execution-Id",
+									"value": "9exkumddcgmf"
+								},
+								{
+									"key": "X-Cloud-Trace-Context",
+									"value": "4dcaf35567ac7706c9364211b4dfed90"
+								},
+								{
+									"key": "alt-svc",
+									"value": "h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000"
+								},
+								{
+									"key": "apigw-requestid",
+									"value": "XAA59i9_IAMEcqw="
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"eur\": {\n        \"EURBRL\": {\n            \"code\": \"EUR\",\n            \"codein\": \"BRL\",\n            \"name\": \"Euro/Real Brasileiro\",\n            \"high\": \"5.5349\",\n            \"low\": \"5.4617\",\n            \"varBid\": \"-0.0547\",\n            \"pctChange\": \"-0.99\",\n            \"bid\": \"5.4762\",\n            \"ask\": \"5.4842\",\n            \"timestamp\": \"1714413997\",\n            \"create_date\": \"2024-04-29 15:06:37\"\n        }\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "USD",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "https://44snf6e6di.execute-api.us-east-1.amazonaws.com/USD",
+						"description": "## Retorna o valor do Dolar\n\nNessa aba, está demonstrado como usar o código para conseguir as informações do Dolar.\n\nO /USD deve ser adicionado para retornar os valores desejados.\n\nObs: A sigla deve ser em maiúsculo para uso correto."
+					},
+					"response": [
+						{
+							"name": "USD",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": "https://44snf6e6di.execute-api.us-east-1.amazonaws.com/USD"
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Mon, 29 Apr 2024 17:54:08 GMT"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "250"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "server",
+									"value": "Google Frontend"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "etag",
+									"value": "W/\"fa-pOtNKB2h/9rD3+yxK8LEf+lMUZc\""
+								},
+								{
+									"key": "Function-Execution-Id",
+									"value": "egr4jmdule6j"
+								},
+								{
+									"key": "X-Cloud-Trace-Context",
+									"value": "938cc928b4767490ea8af38208e736ae;o=1"
+								},
+								{
+									"key": "alt-svc",
+									"value": "h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000"
+								},
+								{
+									"key": "apigw-requestid",
+									"value": "W_--BiL6IAMEcLg="
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"usd\": {\n        \"USDBRL\": {\n            \"code\": \"USD\",\n            \"codein\": \"BRL\",\n            \"name\": \"Dólar Americano/Real Brasileiro\",\n            \"high\": \"5.1213\",\n            \"low\": \"5.1027\",\n            \"varBid\": \"-0.0046\",\n            \"pctChange\": \"-0.09\",\n            \"bid\": \"5.1099\",\n            \"ask\": \"5.111\",\n            \"timestamp\": \"1714413242\",\n            \"create_date\": \"2024-04-29 14:54:02\"\n        }\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "JPY",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "https://44snf6e6di.execute-api.us-east-1.amazonaws.com/JPY",
+						"description": "## Retorna o valor do Iene Japones\n\nNessa aba, está demonstrado como usar o código para conseguir as informações do Iene Japones.\n\nO /JPY deve ser adicionado para retornar os valores desejados.\n\nObs: A sigla deve ser em maiúsculo para uso correto."
+					},
+					"response": [
+						{
+							"name": "JPY",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": "https://44snf6e6di.execute-api.us-east-1.amazonaws.com/JPY"
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Mon, 29 Apr 2024 18:08:58 GMT"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "250"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "server",
+									"value": "Google Frontend"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "etag",
+									"value": "W/\"fa-qgAVTlcC5SoSx7oE4tEXqFxs2eY\""
+								},
+								{
+									"key": "Function-Execution-Id",
+									"value": "9exklkq2dp69"
+								},
+								{
+									"key": "X-Cloud-Trace-Context",
+									"value": "0721609cabec5f3cbebf71fb225a822d;o=1"
+								},
+								{
+									"key": "alt-svc",
+									"value": "h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000"
+								},
+								{
+									"key": "apigw-requestid",
+									"value": "XABJJjiroAMEJow="
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"jpy\": {\n        \"JPYBRL\": {\n            \"code\": \"JPY\",\n            \"codein\": \"BRL\",\n            \"name\": \"Iene Japonês/Real Brasileiro\",\n            \"high\": \"0.03306\",\n            \"low\": \"0.03215\",\n            \"varBid\": \"0.0001\",\n            \"pctChange\": \"0.31\",\n            \"bid\": \"0.03276\",\n            \"ask\": \"0.03278\",\n            \"timestamp\": \"1714414064\",\n            \"create_date\": \"2024-04-29 15:07:44\"\n        }\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "BTC",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "https://44snf6e6di.execute-api.us-east-1.amazonaws.com/BTC",
+						"description": "## Retorna o valor do Bitcoin\n\nNessa aba, está demonstrado como usar o código para conseguir as informações do Bitcoin.\n\nO /BTC deve ser adicionado para retornar os valores desejados.\n\nObs: A sigla deve ser em maiúsculo para uso correto."
+					},
+					"response": [
+						{
+							"name": "BTC",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": "https://44snf6e6di.execute-api.us-east-1.amazonaws.com/BTC"
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Mon, 29 Apr 2024 17:54:49 GMT"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "239"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "server",
+									"value": "Google Frontend"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "etag",
+									"value": "W/\"ef-2bGGfhuyFLrE0arzEZtVc3uCoLM\""
+								},
+								{
+									"key": "Function-Execution-Id",
+									"value": "9exk5b7ck6wv"
+								},
+								{
+									"key": "X-Cloud-Trace-Context",
+									"value": "5cbec8a312b8234a5eed4364e2144255;o=1"
+								},
+								{
+									"key": "alt-svc",
+									"value": "h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000"
+								},
+								{
+									"key": "apigw-requestid",
+									"value": "W__EEjrpoAMEcKQ="
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"btc\": {\n        \"BTCBRL\": {\n            \"code\": \"BTC\",\n            \"codein\": \"BRL\",\n            \"name\": \"Bitcoin/Real Brasileiro\",\n            \"high\": \"329500\",\n            \"low\": \"317723\",\n            \"varBid\": \"-5929\",\n            \"pctChange\": \"-1.8\",\n            \"bid\": \"322922\",\n            \"ask\": \"323502\",\n            \"timestamp\": \"1714413280\",\n            \"create_date\": \"2024-04-29 14:54:40\"\n        }\n    }\n}"
+						}
+					]
+				}
+			],
+			"description": "A API retorna os maiores e menores valores que a moeda obteve no dia.\n\nPara usar a API, basta digitar o link ‘[<b>https://44snf6e6di.execute-api.us-east-1.amazonaws.com/</b>’](https://44snf6e6di.execute-api.us-east-1.amazonaws.com/%E2%80%99) e colocar a sigla da moeda desejada após a ‘**/**’.\n\nA API irá retornar os valores desejados."
+		},
+		{
+			"name": "API Base Usada",
+			"item": [
+				{
+					"name": "Cotacao Dias",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "https://economia.awesomeapi.com.br/json/daily/USD/15",
+						"description": "## Retorna o fechamento dos últimos dias\n\nA função retorna o fechamento dos últimos dias.\n\nPara usar a função, você deve usar o link:[<b>https://economia.awesomeapi.com.br/json/daily/</b>](https://economia.awesomeapi.com.br/json/daily/%E2%80%99) e colocar o nome da moeda e a quantidade de dias que você deseja que retorne, como por exemplo, **USD/15**."
+					},
+					"response": [
+						{
+							"name": "Cotacao Dias",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": "https://economia.awesomeapi.com.br/json/daily/USD/15"
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Mon, 29 Apr 2024 20:00:16 GMT"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "access-control-allow-origin",
+									"value": "*"
+								},
+								{
+									"key": "access-control-allow-methods",
+									"value": "HEAD,OPTIONS,GET,POST"
+								},
+								{
+									"key": "access-control-allow-headers",
+									"value": "Authorization,Content-Type,X-Worker-Token"
+								},
+								{
+									"key": "content-security-policy",
+									"value": "img-src 'self' *.awesomeapi.com.br;default-src 'self';base-uri 'self';block-all-mixed-content;font-src 'self' https: data:;form-action 'self';frame-ancestors 'self';object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests"
+								},
+								{
+									"key": "cross-origin-opener-policy",
+									"value": "unsafe-none"
+								},
+								{
+									"key": "cross-origin-resource-policy",
+									"value": "cross-origin"
+								},
+								{
+									"key": "x-dns-prefetch-control",
+									"value": "off"
+								},
+								{
+									"key": "expect-ct",
+									"value": "max-age=0"
+								},
+								{
+									"key": "x-frame-options",
+									"value": "SAMEORIGIN"
+								},
+								{
+									"key": "strict-transport-security",
+									"value": "max-age=63072000; includeSubDomains"
+								},
+								{
+									"key": "x-download-options",
+									"value": "noopen"
+								},
+								{
+									"key": "x-content-type-options",
+									"value": "nosniff"
+								},
+								{
+									"key": "origin-agent-cluster",
+									"value": "?1"
+								},
+								{
+									"key": "x-permitted-cross-domain-policies",
+									"value": "none"
+								},
+								{
+									"key": "referrer-policy",
+									"value": "no-referrer"
+								},
+								{
+									"key": "x-xss-protection",
+									"value": "0"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "max-age=180, public, stale-while-revalidate=259200, stale-if-error=259200"
+								},
+								{
+									"key": "pragma",
+									"value": "cache"
+								},
+								{
+									"key": "etag",
+									"value": "W/\"7c1-c9GIyWgGJacZMgHpIvr8IU9tbiY\""
+								},
+								{
+									"key": "CF-Cache-Status",
+									"value": "HIT"
+								},
+								{
+									"key": "Age",
+									"value": "6"
+								},
+								{
+									"key": "Report-To",
+									"value": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v4?s=RQy2ma1dx06qR0N2%2BhM74qX9yG1oYgyRzklDiHw%2FlX%2FFBO0u7yb3QE2kHrmYSpRKmy4mR8T6zYVFQpFKfqQuczMJL2h9lzu8P4ljrirRG76Ee0cA2NMIBO%2FPIRan%2BrimqnLo88rhTB6Hk9uL\"}],\"group\":\"cf-nel\",\"max_age\":604800}"
+								},
+								{
+									"key": "NEL",
+									"value": "{\"success_fraction\":0,\"report_to\":\"cf-nel\",\"max_age\":604800}"
+								},
+								{
+									"key": "Vary",
+									"value": "Accept-Encoding"
+								},
+								{
+									"key": "Server",
+									"value": "cloudflare"
+								},
+								{
+									"key": "CF-RAY",
+									"value": "87c1e0960bc31aa6-GRU"
+								},
+								{
+									"key": "Content-Encoding",
+									"value": "br"
+								},
+								{
+									"key": "alt-svc",
+									"value": "h3=\":443\"; ma=86400"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"code\": \"USD\",\n        \"codein\": \"BRL\",\n        \"name\": \"Dólar Americano/Real Brasileiro\",\n        \"high\": \"5.1213\",\n        \"low\": \"5.1027\",\n        \"varBid\": \"-0.0004\",\n        \"pctChange\": \"-0.01\",\n        \"bid\": \"5.1141\",\n        \"ask\": \"5.1153\",\n        \"timestamp\": \"1714420721\",\n        \"create_date\": \"2024-04-29 16:58:41\"\n    },\n    {\n        \"high\": \"5.1673\",\n        \"low\": \"5.1085\",\n        \"varBid\": \"0.0019\",\n        \"pctChange\": \"0.04\",\n        \"bid\": \"5.1163\",\n        \"ask\": \"5.1176\",\n        \"timestamp\": \"1714337960\"\n    },\n    {\n        \"high\": \"5.1673\",\n        \"low\": \"5.1085\",\n        \"varBid\": \"-0.0432\",\n        \"pctChange\": \"-0.84\",\n        \"bid\": \"5.1163\",\n        \"ask\": \"5.1176\",\n        \"timestamp\": \"1714165120\"\n    },\n    {\n        \"high\": \"5.1615\",\n        \"low\": \"5.1585\",\n        \"varBid\": \"0\",\n        \"pctChange\": \"0\",\n        \"bid\": \"5.1597\",\n        \"ask\": \"5.1607\",\n        \"timestamp\": \"1714079306\"\n    },\n    {\n        \"high\": \"5.1535\",\n        \"low\": \"5.1469\",\n        \"varBid\": \"0.0015\",\n        \"pctChange\": \"0.03\",\n        \"bid\": \"5.1471\",\n        \"ask\": \"5.1473\",\n        \"timestamp\": \"1714003120\"\n    },\n    {\n        \"high\": \"5.1322\",\n        \"low\": \"5.1258\",\n        \"varBid\": \"0.0062\",\n        \"pctChange\": \"0.12\",\n        \"bid\": \"5.1318\",\n        \"ask\": \"5.1327\",\n        \"timestamp\": \"1713907801\"\n    },\n    {\n        \"high\": \"5.1694\",\n        \"low\": \"5.1634\",\n        \"varBid\": \"-0.0017\",\n        \"pctChange\": \"-0.03\",\n        \"bid\": \"5.1658\",\n        \"ask\": \"5.1668\",\n        \"timestamp\": \"1713825004\"\n    },\n    {\n        \"high\": \"5.2768\",\n        \"low\": \"5.1852\",\n        \"varBid\": \"-0.045\",\n        \"pctChange\": \"-0.86\",\n        \"bid\": \"5.2027\",\n        \"ask\": \"5.2036\",\n        \"timestamp\": \"1713560398\"\n    },\n    {\n        \"high\": \"5.2768\",\n        \"low\": \"5.1852\",\n        \"varBid\": \"-0.0454\",\n        \"pctChange\": \"-0.87\",\n        \"bid\": \"5.2023\",\n        \"ask\": \"5.2033\",\n        \"timestamp\": \"1713560382\"\n    },\n    {\n        \"high\": \"5.2485\",\n        \"low\": \"5.2416\",\n        \"varBid\": \"-0.0066\",\n        \"pctChange\": \"-0.13\",\n        \"bid\": \"5.2412\",\n        \"ask\": \"5.2419\",\n        \"timestamp\": \"1713475594\"\n    },\n    {\n        \"high\": \"5.2425\",\n        \"low\": \"5.2327\",\n        \"varBid\": \"-0.0088\",\n        \"pctChange\": \"-0.17\",\n        \"bid\": \"5.2328\",\n        \"ask\": \"5.2337\",\n        \"timestamp\": \"1713388567\"\n    },\n    {\n        \"high\": \"5.2913\",\n        \"low\": \"5.2821\",\n        \"varBid\": \"0.0041\",\n        \"pctChange\": \"0.08\",\n        \"bid\": \"5.2864\",\n        \"ask\": \"5.2871\",\n        \"timestamp\": \"1713306482\"\n    },\n    {\n        \"high\": \"5.1905\",\n        \"low\": \"5.1835\",\n        \"varBid\": \"0.0025\",\n        \"pctChange\": \"0.05\",\n        \"bid\": \"5.1866\",\n        \"ask\": \"5.1875\",\n        \"timestamp\": \"1713216593\"\n    },\n    {\n        \"high\": \"5.148\",\n        \"low\": \"5.0893\",\n        \"varBid\": \"0.0263\",\n        \"pctChange\": \"0.52\",\n        \"bid\": \"5.1177\",\n        \"ask\": \"5.1183\",\n        \"timestamp\": \"1712955598\"\n    },\n    {\n        \"high\": \"5.148\",\n        \"low\": \"5.0893\",\n        \"varBid\": \"0.0268\",\n        \"pctChange\": \"0.53\",\n        \"bid\": \"5.1177\",\n        \"ask\": \"5.1193\",\n        \"timestamp\": \"1712955545\"\n    }\n]"
+						}
+					]
+				},
+				{
+					"name": "Fechamento Período",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://economia.awesomeapi.com.br/json/daily/USD-BRL/?start_date=20180901&end_date=20180930",
+							"protocol": "https",
+							"host": [
+								"economia",
+								"awesomeapi",
+								"com",
+								"br"
+							],
+							"path": [
+								"json",
+								"daily",
+								"USD-BRL",
+								""
+							],
+							"query": [
+								{
+									"key": "start_date",
+									"value": "20180901"
+								},
+								{
+									"key": "end_date",
+									"value": "20180930"
+								}
+							]
+						},
+						"description": "## Retorna o fechamento de um período específico\n\nA função retorna o fechamento de um período específico. Para usar a função, você deve usar o link:[https://economia.awesomeapi.com.br/json/daily/](https://economia.awesomeapi.com.br/json/daily/) e colocar o nome da moeda e a data inicial e a final que você deseja que retorne, como por exemplo, **USD-BRL/?start_date=20180901&end_date=20180930.**"
+					},
+					"response": [
+						{
+							"name": "Fechamento Período",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "https://economia.awesomeapi.com.br/json/daily/USD-BRL/?start_date=20180901&end_date=20180930",
+									"protocol": "https",
+									"host": [
+										"economia",
+										"awesomeapi",
+										"com",
+										"br"
+									],
+									"path": [
+										"json",
+										"daily",
+										"USD-BRL",
+										""
+									],
+									"query": [
+										{
+											"key": "start_date",
+											"value": "20180901"
+										},
+										{
+											"key": "end_date",
+											"value": "20180930"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Mon, 29 Apr 2024 20:32:43 GMT"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "access-control-allow-origin",
+									"value": "*"
+								},
+								{
+									"key": "access-control-allow-methods",
+									"value": "HEAD,OPTIONS,GET,POST"
+								},
+								{
+									"key": "access-control-allow-headers",
+									"value": "Authorization,Content-Type,X-Worker-Token"
+								},
+								{
+									"key": "content-security-policy",
+									"value": "img-src 'self' *.awesomeapi.com.br;default-src 'self';base-uri 'self';block-all-mixed-content;font-src 'self' https: data:;form-action 'self';frame-ancestors 'self';object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests"
+								},
+								{
+									"key": "cross-origin-opener-policy",
+									"value": "unsafe-none"
+								},
+								{
+									"key": "cross-origin-resource-policy",
+									"value": "cross-origin"
+								},
+								{
+									"key": "x-dns-prefetch-control",
+									"value": "off"
+								},
+								{
+									"key": "expect-ct",
+									"value": "max-age=0"
+								},
+								{
+									"key": "x-frame-options",
+									"value": "SAMEORIGIN"
+								},
+								{
+									"key": "strict-transport-security",
+									"value": "max-age=63072000; includeSubDomains"
+								},
+								{
+									"key": "x-download-options",
+									"value": "noopen"
+								},
+								{
+									"key": "x-content-type-options",
+									"value": "nosniff"
+								},
+								{
+									"key": "origin-agent-cluster",
+									"value": "?1"
+								},
+								{
+									"key": "x-permitted-cross-domain-policies",
+									"value": "none"
+								},
+								{
+									"key": "referrer-policy",
+									"value": "no-referrer"
+								},
+								{
+									"key": "x-xss-protection",
+									"value": "0"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "max-age=180, public, stale-while-revalidate=259200, stale-if-error=259200"
+								},
+								{
+									"key": "pragma",
+									"value": "cache"
+								},
+								{
+									"key": "etag",
+									"value": "W/\"e8-/Wc8fE55yMSnrShvBcFxP2e2AWw\""
+								},
+								{
+									"key": "CF-Cache-Status",
+									"value": "REVALIDATED"
+								},
+								{
+									"key": "Report-To",
+									"value": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v4?s=zhgj1SNkcDIPHnaZCY0XFZO0mIhnCqC%2BPEgpUVlaShbdQtxyeoMh%2BW%2FeFyt6NBjF656wKQ%2FPn5QmP0SgkE8B6FSLjaMfK3YB83k9WjtNd%2BuFgAtntyvvhEdLhQpX9DjNlrV6t4Y858RqnnDm\"}],\"group\":\"cf-nel\",\"max_age\":604800}"
+								},
+								{
+									"key": "NEL",
+									"value": "{\"success_fraction\":0,\"report_to\":\"cf-nel\",\"max_age\":604800}"
+								},
+								{
+									"key": "Vary",
+									"value": "Accept-Encoding"
+								},
+								{
+									"key": "Server",
+									"value": "cloudflare"
+								},
+								{
+									"key": "CF-RAY",
+									"value": "87c210218ebb1a8a-GRU"
+								},
+								{
+									"key": "Content-Encoding",
+									"value": "br"
+								},
+								{
+									"key": "alt-svc",
+									"value": "h3=\":443\"; ma=86400"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"code\": \"USD\",\n        \"codein\": \"BRL\",\n        \"name\": \"Dólar Americano/Real Brasileiro\",\n        \"high\": \"4.045\",\n        \"low\": \"3.9913\",\n        \"varBid\": \"0.0428\",\n        \"pctChange\": \"1.072\",\n        \"bid\": \"4.0361\",\n        \"ask\": \"4.0371\",\n        \"timestamp\": \"1538160000\",\n        \"create_date\": \"2018-09-28 15:40:00\"\n    }\n]"
+						}
+					]
+				},
+				{
+					"name": "Chamando Moedas",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "https://economia.awesomeapi.com.br/last/USD-BRL,EUR-BRL,BTC-BRL",
+						"description": "## Retorna moedas selecionadas (atualizado a cada 30 segundos)\n\nA função retorna o maior e menor valor da moeda a cada 30s.\n\nPara usar a função, você deve usar o link:[<b>https://economia.awesomeapi.com.br/last/USD</b> ](https://economia.awesomeapi.com.br/json/daily/%E2%80%99) e colocar o nome da moeda que você deseja que retorne, como por exemplo, **USD**."
+					},
+					"response": [
+						{
+							"name": "Chamando Moedas",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": "https://economia.awesomeapi.com.br/last/USD-BRL,EUR-BRL,BTC-BRL"
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Mon, 29 Apr 2024 20:45:27 GMT"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "access-control-allow-origin",
+									"value": "*"
+								},
+								{
+									"key": "access-control-allow-methods",
+									"value": "HEAD,OPTIONS,GET,POST"
+								},
+								{
+									"key": "access-control-allow-headers",
+									"value": "Authorization,Content-Type,X-Worker-Token"
+								},
+								{
+									"key": "content-security-policy",
+									"value": "img-src 'self' *.awesomeapi.com.br;default-src 'self';base-uri 'self';block-all-mixed-content;font-src 'self' https: data:;form-action 'self';frame-ancestors 'self';object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests"
+								},
+								{
+									"key": "cross-origin-opener-policy",
+									"value": "unsafe-none"
+								},
+								{
+									"key": "cross-origin-resource-policy",
+									"value": "cross-origin"
+								},
+								{
+									"key": "x-dns-prefetch-control",
+									"value": "off"
+								},
+								{
+									"key": "expect-ct",
+									"value": "max-age=0"
+								},
+								{
+									"key": "x-frame-options",
+									"value": "SAMEORIGIN"
+								},
+								{
+									"key": "strict-transport-security",
+									"value": "max-age=63072000; includeSubDomains"
+								},
+								{
+									"key": "x-download-options",
+									"value": "noopen"
+								},
+								{
+									"key": "x-content-type-options",
+									"value": "nosniff"
+								},
+								{
+									"key": "origin-agent-cluster",
+									"value": "?1"
+								},
+								{
+									"key": "x-permitted-cross-domain-policies",
+									"value": "none"
+								},
+								{
+									"key": "referrer-policy",
+									"value": "no-referrer"
+								},
+								{
+									"key": "x-xss-protection",
+									"value": "0"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "max-age=30, public, stale-while-revalidate=259200, stale-if-error=259200"
+								},
+								{
+									"key": "pragma",
+									"value": "cache"
+								},
+								{
+									"key": "etag",
+									"value": "W/\"2bb-Pvx5E9xzcL6cDrBmUZSS/QcSN+8\""
+								},
+								{
+									"key": "CF-Cache-Status",
+									"value": "HIT"
+								},
+								{
+									"key": "Age",
+									"value": "27"
+								},
+								{
+									"key": "Report-To",
+									"value": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v4?s=mSvzVGI5j6tMBaAkpt4bpC3fOfqLrR3gGWjzS8LFRNF8J9LxprGwLAiij47znHaBogbMaS%2Bs7i807LaeIGKn0CSPd7vbx5zFUv7TaO7eKxeGLJbW1NvEbbSXz9hIKO8a%2FEUxvUOBAHTphaku\"}],\"group\":\"cf-nel\",\"max_age\":604800}"
+								},
+								{
+									"key": "NEL",
+									"value": "{\"success_fraction\":0,\"report_to\":\"cf-nel\",\"max_age\":604800}"
+								},
+								{
+									"key": "Vary",
+									"value": "Accept-Encoding"
+								},
+								{
+									"key": "Server",
+									"value": "cloudflare"
+								},
+								{
+									"key": "CF-RAY",
+									"value": "87c222c60f361a8a-GRU"
+								},
+								{
+									"key": "Content-Encoding",
+									"value": "br"
+								},
+								{
+									"key": "alt-svc",
+									"value": "h3=\":443\"; ma=86400"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"USDBRL\": {\n        \"code\": \"USD\",\n        \"codein\": \"BRL\",\n        \"name\": \"Dólar Americano/Real Brasileiro\",\n        \"high\": \"5.122\",\n        \"low\": \"5.1027\",\n        \"varBid\": \"0.0044\",\n        \"pctChange\": \"0.09\",\n        \"bid\": \"5.1189\",\n        \"ask\": \"5.12\",\n        \"timestamp\": \"1714423496\",\n        \"create_date\": \"2024-04-29 17:44:56\"\n    },\n    \"EURBRL\": {\n        \"code\": \"EUR\",\n        \"codein\": \"BRL\",\n        \"name\": \"Euro/Real Brasileiro\",\n        \"high\": \"5.5349\",\n        \"low\": \"5.4617\",\n        \"varBid\": \"-0.0515\",\n        \"pctChange\": \"-0.93\",\n        \"bid\": \"5.4794\",\n        \"ask\": \"5.4874\",\n        \"timestamp\": \"1714423468\",\n        \"create_date\": \"2024-04-29 17:44:28\"\n    },\n    \"BTCBRL\": {\n        \"code\": \"BTC\",\n        \"codein\": \"BRL\",\n        \"name\": \"Bitcoin/Real Brasileiro\",\n        \"high\": \"328191\",\n        \"low\": \"317723\",\n        \"varBid\": \"-3757\",\n        \"pctChange\": \"-1.15\",\n        \"bid\": \"323514\",\n        \"ask\": \"324000\",\n        \"timestamp\": \"1714423497\",\n        \"create_date\": \"2024-04-29 17:44:57\"\n    }\n}"
+						}
+					]
+				}
+			],
+			"description": "Essas são as funções que a API Publica usada pode retornar."
+		}
+	]
+}
